@@ -1,0 +1,543 @@
+:root{
+    --folly:#F52F57;
+    --bright-pink:#F75C7B;
+    --black:#0000;
+    --white:#fff;
+    --greish:#8F7A6E;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+  .heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #F75C7B;
+    padding: 1rem;
+    margin: 2rem 0;
+  
+    /* background: rgba(255, 51, 153, 0.05); */
+  }
+  
+  .heading span {
+    color:black;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--folly);
+    color: #ffff;
+    padding: 0.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  .btn:hover {
+    background: #0000;
+  }
+
+
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: black;
+  }
+  header .logo {
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  header .logo span {
+    color: var(--pink);
+  }
+  header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: var(--white);
+  }
+  
+  header .navbar a:hover {
+    color: var(--greish);
+  }
+  header .icons a {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-left: 1.5rem;
+  }
+  header .icons a:hover {
+    color: var(--greish);
+  }
+  header #toggler {
+    display: none;
+  }
+  header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.5rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/images/final.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .home .content {
+    max-width: 50rem;
+  }
+  .home .content h3 {
+    font-size: 4rem;
+    color: black;
+  }
+  .home .content span {
+    font-size: 2.5rem;
+    color: var(--folly);
+    padding: 1rem 0;
+    line-height: 1.5rem;
+    font-family: italic;
+  }
+  .home .content p {
+    font-size: 1.2rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5rem;
+  }
+  
+
+  .perfumes .perfumes-slider .slides {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+   
+  }
+  .perfumes .perfumes-slider .slides .content{
+      flex:1 1 45rem;
+  }
+  .perfumes .perfumes-slider .slides .image{
+      flex:1 1 45rem;
+  }
+  .perfumes .perfumes-slider .slides .image img{
+       width:100%; 
+  }
+  .perfumes .perfumes-slider .slides .content span{
+     color: black;
+     font-size: 2.5rem;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .perfumes .perfumes-slider .slides .content h3{
+      color:#F52F57;
+      font-size:7rem;
+   }
+   .perfumes .perfumes-slider .slides .content h3{
+      color: #666;
+      font-size:2.2rem;
+      padding: .5rem 0;
+      line-height: 1.5;
+   }
+  .swiper-pagination-bullet-active{
+    background: var(--green);
+    
+  }
+  .about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    background: url(images/roses_.jpg!d);
+  }
+  .about .row .video-container {
+    flex: 1 1 40rem;
+    position: relative;
+  }
+  .about .row .video-container video {
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: 5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 100%;
+    object-fit: cover;
+  }
+  .about .row .video-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+  }
+  
+  .about .row .content {
+    flex: 1 1 40rem;
+  }
+  .about .row .content h3 {
+    flex: 3rem;
+    color: #eee;
+  }
+  .about .row .content p {
+    flex: 1.5rem;
+    color: #999;
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+  }
+
+  .products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+   
+  }
+  
+  .products .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 5rem;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: aliceblue;
+  }
+  .products .box-container .box .discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba(255, 51, 153, 0.05);
+    z-index: 1;
+    border-radius: 0.5rem;
+  }
+  .products .box-container .box .image {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+  
+  .products .box-container .box:hover .image img {
+    transform: scale(1.1);
+  }
+  
+  .products .box-container .box .image .icon {
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+  }
+  
+  .products .box-container .box:hover .image .icon {
+    bottom: 0;
+  }
+  .products .box-container .box .image .icon a {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--pink);
+    color: #fff;
+  }
+  .products .box-container .box .image .icon .cart-btn {
+    border-left: 0.5rem solid #F75C7B;
+    border-right: 0.5rem solid #F75C7B;
+    width: 100%;
+  }
+  .products .box-container .box .image .icon a:hover {
+    background: #F52F57;
+  }
+  
+  .products .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .products .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--bright-pink);
+  }
+  .products .box-container .box .content p {
+    font-size: 2.5rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+  }
+  .products .box-container .box .content span {
+    font-size: 1.5rem;
+    color: var(--folly);
+    font-weight: lighter;
+    text-decoration: line-through;
+  }
+  
+  .icons-container {
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+  }
+  .icons-container .icons {
+    background:#fff;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+  }
+  .icons-container .icons img {
+    height: 5rem;
+    margin-right: 2rem;
+  }
+  .icons-container .icons h3 {
+    color: #333;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .icons-container .icons span {
+    color: #999;
+  
+    font-size: 1.3rem;
+  }
+
+
+  .review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .review .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  .review .box-container .box .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+  }
+  .review .box-container .box .stars i {
+    color: var(--bright-pink);
+    font-size: 2rem;
+  }
+  .review .box-container .box p {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+  }
+  .review .box-container .box .users {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .review .box-container .box .users img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  .review .box-container .box .users h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  .review .box-container .box .users span {
+    font-size: 1.5rem;
+    color: #999;
+  }
+  .review .heading{
+    color:black;
+  }
+
+  .review span{
+    color:#F52F57
+  }
+  .review .box-container .box{
+    background: url(/images/Viva-Magenta-Flower-scaled.jpg);
+  }
+
+  .order form{
+    max-width:90rem;
+     border-radius: .5rem;
+     box-shadow: var(--box-shadow);
+     border: 1rem solid rgba(0, 0, 0, 0.2);
+     background: aliceblue;
+     padding: 1.5rem;
+     margin:0 auto;
+   
+   }
+   .order form .input-box {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   }
+   .order form .input-box .input{
+    width:49%;
+     }
+     .order form .input-box .input span{
+      display: block;
+      padding: .5rem 0;
+      font-size: 1.5rem;
+      color: var(--light-color);
+        }
+   
+        .order form .input-box .input input,
+        .order form .input-box .input textarea{
+         background: #eee;
+         border-radius: .5rem;
+         padding: 1rem;
+         font-size: 1.6rem;
+         color: var(--black);
+         text-transform: none;
+         margin-bottom: 1rem;
+         width: 100%;
+        }
+   
+        .order form .input-box .input input:focus,
+        .order form .input-box .input textarea:focus{
+   border: 1rem solid rgba(0, 0, 0, 0.2);
+        }
+        .order form .input-box .input textarea{
+         height: 20rem;
+         resize: none;
+        }
+        .order form .btn{
+         margin-top: 0;
+        }
+   
+        .footer .box-container{
+          display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+      gap:1.5rem;
+         }
+         .footer .box-container .box h3{
+          padding:.5rem 0;
+          font-size: 2.5rem;
+          color: var(--black);
+    
+         }
+         .footer .box-container .box a{
+         display: block;
+         padding: .5rem 0;
+         font-size: 1.5rem;
+         color: var(--light-color);
+    
+         }
+         .footer .box-container .box a:hover{
+          text-decoration: underline;
+          color: var(--green);
+     
+          }
+          
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    header {
+      padding: 2rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    .home {
+      background-position: left;
+    } 
+  }
+  
+  @media (max-width: 768px) {
+    header .fa-bars {
+      display: block;
+    }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #eee;
+      border-top: 1rem solid rgba(0, 0, 0, 0.1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked ~ .navbar {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background: #fff;
+      border-top: 1rem solid rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+    .home .content h3 {
+      font-size: 5rem;
+    }
+    .home .content span {
+      font-size: 2.5rem;
+    }
+    .icons-container .icons h3 {
+      font-size: 2rem;
+    }
+    .icons-container .icons span {
+      font-size: 1.7rem;
+    }
+    .perfumes .perfumes-slider.slide .content h3{
+        font-size: 5rem;
+      }
+
+  }
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .heading {
+      font-size: 3rem;
+    }
+  }
+  
